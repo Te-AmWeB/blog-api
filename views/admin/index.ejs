@@ -1,0 +1,18 @@
+<% layout('layout') %>
+<% title = 'Admin Panel' %>
+
+<h2>Admin Panel</h2>
+<a href="/admin/new">➕ New Post</a>
+
+<ul>
+  <% posts.forEach(post => { %>
+    <li>
+      <a href="/admin/edit/<%= post.id %>"><%= post.title %></a>
+      <% if (post.published) { %> ✅ Published <% } else { %> ⏳ Draft <% } %>
+
+      <form method="POST" action="/admin/delete/<%= post.id %>" style="display:inline;" onsubmit="return confirm('Удалить этот пост?');">
+        <button type="submit" style="background:#dc3545; color:white; border:none; padding:4px 10px; border-radius:4px;">🗑️</button>
+      </form>
+    </li>
+  <% }) %>
+</ul>

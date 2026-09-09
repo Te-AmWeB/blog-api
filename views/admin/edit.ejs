@@ -1,0 +1,25 @@
+<% layout('layout') %>
+<% title = post ? 'Edit Post' : 'New Post' %>
+
+<h2><%= post ? 'Edit Post' : 'New Post' %></h2>
+
+<form method="POST" action="/admin/save">
+  <% if (post) { %>
+    <input type="hidden" name="id" value="<%= post.id %>">
+  <% } %>
+
+  <label>Title</label>
+  <input type="text" name="title" value="<%= post ? post.title : '' %>" required>
+
+  <label>Content</label>
+  <textarea name="content" rows="10" required><%= post ? post.content : '' %></textarea>
+
+  <label>
+    <input type="checkbox" name="published" <%= post && post.published ? 'checked' : '' %>>
+    Publish
+  </label>
+
+  <button type="submit">Save</button>
+</form>
+
+<a href="/admin">← Back</a>

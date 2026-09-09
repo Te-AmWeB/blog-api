@@ -1,0 +1,17 @@
+<% layout('layout') %>
+<% title = 'All Posts' %>
+
+<h2>All Posts</h2>
+
+<% if (posts.length === 0) { %>
+  <p>No posts yet.</p>
+<% } else { %>
+  <% posts.forEach(post => { %>
+    <article>
+      <h3><a href="/posts/<%= post.id %>"><%= post.title %></a></h3>
+      <p><%= post.content.slice(0, 150) %>...</p>
+      <small>By <%= post.author.username %></small>
+      <hr>
+    </article>
+  <% }) %>
+<% } %>
