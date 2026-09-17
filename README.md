@@ -72,4 +72,4 @@ https://github.com/Te-AmWeB/blog-api/blob/main/admin.png
 
 https://github.com/Te-AmWeB/blog-api/blob/main/login.png
 
-
+https://github.com/Te-AmWeB/blog-api/blob/main/Register.png
