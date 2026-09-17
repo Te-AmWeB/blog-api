@@ -67,3 +67,7 @@ PORT=6767
 Built with ❤️ by two brothers on their way to becoming full‑stack developers.
 
 https://github.com/Te-AmWeB/blog-api/blob/main/Lobby.png
+
+https://github.com/Te-AmWeB/blog-api/blob/main/admin.png
+
+
