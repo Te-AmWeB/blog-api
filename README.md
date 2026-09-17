@@ -59,9 +59,11 @@ PORT=6767
 
 | Role | Name | GitHub |
 |------|------|--------|
-| Backend & Architecture | Egor | [Te-AmWeB](https://github.com/Te-AmWeB) |
-| Frontend & Design | ICHIGOe | [Stack](https://github.com/Stack-zzz) |
+| Backend & Architecture | Team| [Te-AmWeB](https://github.com/Te-AmWeB) |
+| Frontend & Design |Stack  | [Stack](https://github.com/Stack-zzz) |
 
 ---
 
 Built with ❤️ by two brothers on their way to becoming full‑stack developers.
+
+https://github.com/Te-AmWeB/blog-api/blob/main/Lobby.png
